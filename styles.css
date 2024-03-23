@@ -1,0 +1,98 @@
+:root{
+
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+/* body */
+body{
+ margin: 0;
+ padding: 0 ;
+ box-sizing: border-box;
+ font-family: 'kumbh Sans',sans-serif;
+ font-size: 18px;
+ background-color: var(--Darkcyan);
+ background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+ background-repeat: no-repeat;
+ background-position: right 51vw bottom 20vh, left 45vw top 50vh ;
+}
+/* card */
+.card-container{
+    
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden ;
+    position: relative;
+    box-shadow: 12px 15px 40px -2px  var(--Verydarkdesaturatedblue);
+}
+/* bubbles */
+.bubbles{
+    background: url(images/bg-pattern-card.svg);
+    height:140px ;
+}
+
+.image{
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+}
+.date-personal-container{
+    background-color: #fff;
+    height: 150px;   
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.name{
+    width: 700;
+    color: var(--Verydarkdesaturatedblue);
+}
+.age, .city{
+    color: var(--Darkgray);
+}
+.city{
+    margin-top:10px;
+    font-size: 0.8em;
+
+}
+
+.stats-container{
+    background-color: #fff;
+    border-top: 1px solid var(--Darkgray);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+.statistics{
+    text-align: center;
+
+}
+.quantity{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:var(--Verydarkdesaturatedblue) ;
+}
+.uni{
+    font-size: 0.6em;
+    color: var(--Darkgray);
+    letter-spacing: 2px;
+}
+/* footer */
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+/* >1439px */
+    @media screen and (min-width:1440px) {
+        .card-container{
+            width: 350px;
+        }
+    }
